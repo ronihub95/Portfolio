@@ -27,11 +27,12 @@ function Contact(props) {
   const onSendEmail = async (e) => {
     e.preventDefault()
 
+    let response
+    
     try {
-      const isProd = process.env.NODE_ENV === 'production'
-      const base = isProd ? 'https://rohinipatturaja.com' : 'http://localhost:3000'
-
-      await fetch(`${base}/api/email`, {
+      console.log('Sending email...')
+      
+      response = await fetch('/api/email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -42,11 +43,21 @@ function Contact(props) {
         }),
       })
 
+      console.log('Response status:', response.status)
+
+      const data = await response.json()
+      console.log('Response data:', data)
+
+      if (!response.ok) {
+        throw new Error(data.message || 'Failed to send email')
+      }
+
       setIsEmailSent(true)
       setShowToast(true)
-    }
-    catch(e) {
-      console.error(e)
+      e.target.reset() // Clear the form on success
+      
+    } catch(error) {
+      console.error('Error sending email:', error)
       setIsEmailSent(false)
       setShowToast(true)
     }

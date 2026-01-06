@@ -65,7 +65,7 @@ function Work(props) {
     in Healthcare and Energy domains.
     <br /><br />
     Want me on your team?
-    <a href="https://www.rohinipatturaja.site/contact" target="_blank">
+    <a href="https://rohinipatturaja-rohinipatturaja.vercel.app/contact" target="_blank">
       Let’s connect →
     </a>
   `

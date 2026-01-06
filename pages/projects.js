@@ -71,7 +71,7 @@ function Talks(props) {
 
   const { title, image } = props
   //const description = `I went my first conference in 2010 and felt in love with <strong>sharing knowledge</strong> publicly. Since then, I traveled to <strong>11 countries</strong> and gave more than <strong>${getTotalTalks()} talks</strong>. Want me to speak at your event? Hit me up!`
-  const description = `A journey through data analytics roles where I've consistently delivered business value through innovative data solutions. I’ve completed over <strong>${getTotalTalks()} projects</strong> spanning dashboards, ML models, AI-driven insights. Want to collaborate? <a href="https://www.rohinipatturaja.site/contact" target="_blank">Let's connect!</a>`
+  const description = `A journey through data analytics roles where I've consistently delivered business value through innovative data solutions. I’ve completed over <strong>${getTotalTalks()} projects</strong> spanning dashboards, ML models, AI-driven insights.`
 
   return (
     <>

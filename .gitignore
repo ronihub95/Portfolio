@@ -1,0 +1,5 @@
+.next
+.vercel
+auth.json
+node_modules
+.env*.local

@@ -21,11 +21,14 @@ import downloadIcon from '../public/static/icons/download.json'
 export async function getStaticProps() {
   const meta = {
     title: 'About // Rohini Patturaja',
-    description:`
-      Rohini Patturaja is a business-focused Data Analyst with 6+ years of experience delivering insights that drive strategy and performance. 
-      She translates complex data into clear narratives through SQL analysis, interactive dashboards, and KPI tracking, delivering $2.8M+ in business impact at IBM and CGI.
-      Recognized with multiple company awards for analytics excellence, she builds reliable, scalable workflows that deliver measurable business outcomes.
+      description:`
+      Rohini Patturaja is a results-driven Business Intelligence Analyst with 8+ years of cross-industry experience designing enterprise dashboards, ETL automation workflows,
+       and advanced analytics solutions across healthcare, energy, and marketing sectors. She specializes in SQL, BI visualization tools, predictive modeling, customer segmentation, 
+       and domain-specific analytics, leading critical projects at IBM and CGI that enhanced operational efficiency, marketing ROI, and strategic planning across diverse business environments. 
+       Her implementation of automated ETL processes, industry-tailored forecasting models, regulatory compliance dashboards, and multi-channel attribution systems has empowered stakeholders with actionable insights that drive performance optimization and business growth.
+      Rohini's versatile expertise enables her to quickly adapt analytical frameworks to unique industry requirements, transforming complex data into strategic business value.  
       `,
+
     tagline: 'Data. Insight. Impact.',
     image: '/static/images/about-bw.jpg',
     primaryColor: 'pink',
@@ -121,12 +124,12 @@ function About(props) {
             />
             Copy Bio
           </ButtonPrimary>
-          <span style={{ margin: '0 20px 0 10px' }}>•</span>
+          {/* <span style={{ margin: '0 20px 0 10px' }}>•</span>
           <ButtonPrimary
             as="a"
             download
             role="button"
-            href="https://drive.google.com/file/d/10Y-7gGbo_dSovjSN91UnidxrKd0OS0Gk/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1AFaw-kN7FICEw2PjpTjLfMAP_zUQh3pu/view?usp=drive_link"
             target="_blank"
             style={btnStyle}
             onClick={downloadResume}
@@ -141,7 +144,7 @@ function About(props) {
               autoplay={false}
             />
             Download Resume
-          </ButtonPrimary>
+          </ButtonPrimary> */}
         </ButtonsContainer>
       </div>
     )

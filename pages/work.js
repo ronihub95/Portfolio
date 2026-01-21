@@ -60,9 +60,9 @@ function Work(props) {
   const description = `
     My journey with data began in 2017, and I’ve been passionate about turning
     raw numbers into actionable insights ever since. With over
-    <strong>6 years of experience</strong> across ETL, SQL, and Business Intelligence,
+    <strong>8+ years of experience</strong> across ETL, SQL, and Business Intelligence,
     I’ve helped organizations make <strong>high-impact, data-driven decisions</strong>
-    in Healthcare and Energy domains.
+    in Healthcare, Energy, Education and domains.
     <br /><br />
     Want me on your team?
     <a href="https://rohinipatturaja-rohinipatturaja.vercel.app/contact" target="_blank">

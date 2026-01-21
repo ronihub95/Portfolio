@@ -4,7 +4,7 @@ const items = [
     company: 'University of Central Missouri',
     companyUrl: 'https://www.ucmo.com',
     companyLogo: '/static/images/Company/UCM.png',
-    startDate: '2024-05-01',
+    startDate: '2024-06-01',
     endDate: '2025-12-12',
     location: 'Warrensburg, Missouri',
     roleType: 'Part-time',
@@ -16,17 +16,19 @@ const items = [
       'Predictive Analytics',
       'Statistical Modeling',
       'Data Visualization',
+      'Marketing KPIs'
     ],
     highlights: [
-      '225% lift in email engagement through predictive segmentation and A/B testing',
-      'Maintained 75K+ alumni records with 99% accuracy supporting $2M+ fundraising'
+      '3.25x CTR lift in email engagement through predictive segmentation and A/B testing',
+      'Improved CRM data accuracy by ~25% by cleansing and validating 100K+ records, strengthening donor research and advancement strategy'
     ],
     description: [
-      "Ensured data integrity for 75K+ alumni records in university's CRM database with 99% accuracy.",
-      'Streamlined data import workflows by designing automated field mapping, eliminating ~15 hours/week of manual work.',
-      'Achieved 225% increase in email CTR through predictive segmentation, A/B testing, and Tableau dashboards.',
-      'Cleansed and validated 2K+ CRM records weekly using Excel, improving data accuracy by ~25%.',
-      'Performed targeted data research identifying engagement trends for advancement strategies and donor prospecting.'
+      'Cleansed and validated 100K+ CRM records using Excel, improving data accuracy by ~25%.',
+      'Performed targeted data research identifying engagement trends for advancement strategies and donor prospecting.',
+      'Analyzed 790K+ email campaign records to evaluate engagement performance using core marketing KPIs (delivery rate, open rate, CTR, CTOR, unsubscribe, spam rate), identifying gaps versus industry benchmarks.',
+      'Performed time-based and content-based analysis to uncover high-performing email types and optimal send windows, revealing afternoon weekday sends and athletics-related content as key engagement drivers.',
+      'Built and evaluated predictive models (Logistic Regression, Random Forest, Gradient Boosting) to estimate user click probability, selecting Gradient Boosting as the best-performing model (ROC AUC ~0.91) for ranking high-intent users.',
+      'Designed interactive Tableau dashboards translating complex analyses into actionable insights for stakeholders, enabling campaign comparison, engagement heatmaps, KPI monitoring, and data-driven targeting decisions.'
     ],
   },
 
@@ -42,11 +44,10 @@ const items = [
     technologies: [
       'SQL',
       'Python',
-      'Oracle Database',
       'Tableau',
-      'Power BI',
       'Excel',
-      'ETL Development',
+      'ETL Automation',
+      'KPI Frameworks',
       'Healthcare Analytics',
       'Data Modeling',
       'Data Quality Management',
@@ -57,17 +58,23 @@ const items = [
       'Slack'
     ],
     highlights: [
-      'Delivered $1.1M in cost savings and 40% efficiency gains through Python automation',
-      'Processed 5M+ member records with 99% accuracy while reducing claim denials by 10-15%'
+      'Delivered $65K in cost savings and 40% efficiency gains through Python automation',
+      'Collaborated with clinical, vendor, and business stakeholders to standardize KPIs and reporting.'
     ],
-    description: [
-      'Automated ETL validation workflows using Python, improving efficiency 40% and delivering $1.1M annual savings.',
-      'Processed 5M+ GIC member records integrating medical, pharmacy, and eligibility data with 99% completeness.',
-      'Reduced claim denial rates 10-15% through root cause analysis, accelerating provider reimbursement cycles.',
-      'Delivered Oncology claims reports within 24-48 hours, identifying $800K in high-cost outlier cases.',
-      'Partnered with QA, actuarial, and operations teams to validate insights and support regulatory compliance.',
-      'Mentored 2-3 junior analysts on SQL optimization and BI best practices, improving team accuracy 30%.'
-    ]
+    
+     description: [
+'Designed, automated, and maintained Python-based ETL validation workflows for the SCoReT regulatory application, executing 50+ complex business-rule checks to ensure data accuracy and readiness for downstream reporting.',
+'Reduced regulatory review cycles by 40% by identifying systemic data issues early in the pipeline, minimizing rework, reducing reporting errors, and delivering $65K in annual cost savings.',
+'Conducted forecasting and statistical analysis on CAHPS survey data for Medicare Part C & D populations, evaluating CMS quality measures and member experience KPIs to support quality improvement initiatives.',
+'Identified a 15% performance improvement opportunity across key CMS measures by analyzing trends, vendor performance, and population-level variations.',
+'Developed and optimized SQL-driven production reporting pipelines supporting vendor partners, validating and reconciling 500K+ healthcare records per month across claims, eligibility, and outreach datasets.',
+'Built and maintained Tableau dashboards to replace manual bi-weekly reporting, enabling self-service KPI monitoring while maintaining HIPAA-compliant data handling and access controls.',
+'Collaborated with clinical and care management teams to design oncology-focused claims data models and extracts, integrating diagnosis, utilization, and treatment data.',
+'Processed and analyzed 40K+ oncology claims per quarter to identify high-risk patients and surface $800K in potential care gap opportunities for early intervention.',
+'Supported UAT and production releases by validating KPI logic, calculations, and report outputs prior to deployment.',
+'Authored technical and business documentation covering data sources, validation rules, dashboards, and KPI definitions to support audit readiness and stakeholder alignment.',
+'Mentored 2-3 junior analysts on SQL optimization and BI best practices, improving team accuracy 30%.'
+]
   },
 
   {
@@ -83,30 +90,32 @@ const items = [
       'SQL',
       'Python',
       'Machine Learning',
-      'Logistic Regression',
       'Power BI',
-      'REST APIs',
       'Excel (Advanced Analytics)',
       'Informatica PowerCenter',
       'Facets Core',
-      'Healthcare Data Standards'
+      'Healthcare Data Standards',
+      'Data Modeling',
+      'Data Governance/Compliance Tools'
     ],
     highlights: [
-      'Engineered real-time data integration reducing reporting latency from daily to hourly',
-      'Built ML models processing 10M+ claims monthly with 60% faster reconciliation'
+      'Boosted data accuracy 22% via OLAP integration of claims and member data.',
+      'Improved claims efficiency 28% with Power BI dashboards and SQL analysis.'
     ],
-    description: [
-      'Built SQL ETL processes handling 10M+ monthly claims, standardizing financial metrics and reducing reconciliation 60%.',
-      'Integrated REST APIs enabling real-time data ingestion and transforming Power BI refresh from daily to hourly.',
-      'Developed logistic regression models identifying high-propensity members for targeted enrollment campaigns.',
-      'Delivered audit-ready pipelines serving Digital Experience and Corporate Analytics teams with HIPAA compliance.',
-      'Implemented data quality monitoring reducing production incidents 40% and strengthening stakeholder trust.'
-    ],
+     description: [
+'Integrated Facets claims, eligibility, and member data into SQL-based OLAP models, implementing SCD Type 1 and Type 2 methodologies for historical tracking, improving data accuracy by 22% and standardizing KPI reporting.',
+'Conducted exploratory data analysis (EDA) and applied logistic regression to investigate claims denial root causes, enhancing claims processing efficiency by ~28%.',
+'Developed and delivered ad-hoc Power BI dashboards with advanced DAX measures for C-level executives and VPs, enabling data-driven pricing strategies across HMO, PPO, Medicare, and Medicaid lines.',
+'Designed raw, staging, and curated data layers using star and snowflake schema–based data models, improving cross-source data consistency by 40% and enabling standardized healthcare analytics.',
+'Conducted data profiling, validation, and root-cause analysis to ensure data accuracy, consistency, and adherence to governance standards.',
+'Applied advanced SQL techniques joins, CTEs, window functions, indexing, and partitioning—to improve query performance and data integrity across systems.',
+'Governed regulatory compliance across the SDLC by enforcing HIPAA, ICD-10, CMS, and internal governance protocols; implemented audit checkpoints and documentation controls that reduced compliance findings.' 
+]
   },
 
   {
     jobTitle: 'Data Specialist',
-    company: 'Client – Oncor Electric Delivery (IBM)',
+    company: 'Client – Oncor Electric Delivery',
     companyLogo: '/static/images/Company/IBM_logo.png',
     companyUrl: 'https://www.ibm.com/us-en',
     startDate: '2017-02-06',
@@ -127,16 +136,17 @@ const items = [
       'Production Support',
     ],
     highlights: [
-      'Optimized ETL pipelines achieving 62% faster processing (2 hours to 45 minutes)',
-      'Supported multi-million dollar revenue recovery with 99.9% data accuracy at enterprise scale'
+      'Streamlined 50M+ meter ETL pipelines, cutting latency and errors.',
+      'Optimized Maximo-to-Cognos reports, slashing runtime 87%.'
     ],
-    description: [
-      'Built Informatica ETL pipelines processing millions of AMS records, enabling customer usage and transformer load analysis.',
-      'Optimized SQL queries and partitioning strategies, reducing processing time 62% (from 2 hours to 45 minutes).',
-      'Supported IBM Cognos BI reporting for multi-million-dollar revenue recovery initiative through CCB estimation analysis.',
-      'Led platform migrations across OMS, MDMS, and CCB ensuring data integrity and zero loss.',
-      'Achieved 99.9% data accuracy through comprehensive validation frameworks and maintained 99.5% SLA compliance.'
-    ],
+     description: [
+'Designed and built ERCOT-compliant CDC ETL pipelines using Informatica, processing 50M+ smart meter events (MDM/OMS → Oracle DW), achieving <20 min data latency, 99.8% SLA adherence, and a 35% reduction in billing discrepancies.',
+'Migrated and optimized 23+ Maximo reports to Cognos BI, tuning SQL queries and data models to reduce report runtime from 15 → 2 minutes (87% faster), and automated monthly dashboards for 200+ asset management users.',
+'Led cross-functional ETL release management in Agile environments, coordinating UAT and production deployments, reducing release disruptions by 83% and maintaining 95%+ stakeholder satisfaction.',
+'Implemented automated data quality and validation rules for meter, billing, and asset datasets, ensuring 99% accuracy for ERCOT/PUC reporting and compliance.',
+'Developed SQL-driven monitoring and reconciliation processes to track pipeline performance, quickly identify anomalies, and maintain high data integrity across enterprise systems.',      
+'Collaborated with business and technical teams to define KPIs, standardize reporting, and document data flows, enabling actionable insights for operational and billing efficiency.'
+],
   },
 ]
 

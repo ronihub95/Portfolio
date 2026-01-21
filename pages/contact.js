@@ -20,7 +20,7 @@ export async function getStaticProps() {
 
 function Contact(props) {
   const { title, image } = props
-  const description = `<strong>I love chatting</strong> with software engineers, tech founders, students, and geeks. I promise that I'll try to reply to your email in a timely manner.`
+  const description = `<strong>I enjoy connecting</strong> with fellow data analysts, business intelligence professionals, and tech enthusiasts. I aim to respond to emails promptly and provide actionable insights whenever possible.`
   const [isEmailSent, setIsEmailSent] = React.useState(undefined)
   const [showToast, setShowToast] = React.useState(false)
 
@@ -89,11 +89,11 @@ function Contact(props) {
           
           <FormGroup>
             <Label htmlFor="name">Name</Label>
-            <Input id="name" name="name" type="text" placeholder="James Bond" required />
+            <Input id="name" name="name" type="text" placeholder="Roni" required />
           </FormGroup>
           <FormGroup>
             <Label htmlFor="email">Email</Label>
-            <Input id="email" name="email" type="email" placeholder="james@bond.com" required />
+            <Input id="email" name="email" type="email" placeholder="rohinipatturaja@gmail.com" required />
           </FormGroup>
           <FormGroup>
             <Label htmlFor="message">Message</Label>

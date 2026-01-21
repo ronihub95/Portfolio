@@ -3,9 +3,9 @@ const items = [
     jobTitle: 'Data Analyst',
     company: 'UCM',
     companyUrl: 'https://www.ucmo.com',
-    startDate: '2024-05-01',
+    startDate: '2024-06-01',
     endDate: '2025-12-12',
-    location: 'San Francisco, California',
+    location: 'Warrensburg, Missouri',
   },
   {
     jobTitle: 'Business Intelligence Analyst',

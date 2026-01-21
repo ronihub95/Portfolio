@@ -4,15 +4,19 @@ const categories = [
     items: [
       {
         title: 'Tableau',
-        description: 'Interactive dashboards, storytelling, executive reporting',
+        description: 'Interactive dashboards, KPI monitoring, executive reporting, heatmaps',
       },
       {
         title: 'Power BI',
-        description: 'Advanced dashboards, DAX, automation, KPI tracking',
+        description: 'Advanced dashboards, DAX, automation, KPI tracking, ad-hoc reporting',
       },
       {
         title: 'Advanced Excel',
-        description: 'Complex formulas, pivot tables, Power Query, VBA macros',
+        description: 'Pivot tables, Power Query, Power Pivot, complex formulas, VBA macros',
+      },
+      {
+        title: 'Cognos BI',
+        description: 'Report migration, dashboard automation, SQL optimization',
       },
     ],
   },
@@ -21,15 +25,15 @@ const categories = [
     items: [
       {
         title: 'SQL (SQL Server, MySQL, PostgreSQL, Oracle)',
-        description: 'Complex queries, window functions, query optimization, stored procedures',
+        description: 'Complex queries, window functions, CTEs, indexing, query optimization, stored procedures',
       },
       {
-        title: 'Python (Pandas, NumPy)',
-        description: 'Data manipulation, cleaning, statistical analysis',
+        title: 'Python (Pandas, NumPy, scikit-learn)',
+        description: 'Data manipulation, cleaning, statistical analysis, predictive modeling, cohort/funnel analysis',
       },
       {
         title: 'R',
-        description: 'Statistical modeling, data mining, predictive analytics',
+        description: 'Statistical modeling, regression analysis, predictive analytics',
       },
     ],
   },
@@ -37,17 +41,17 @@ const categories = [
     name: 'Data Engineering & ETL',
     items: [
       {
-        title: 'Informatica',
-        description: 'ETL workflows, data integration, pipeline automation',
+        title: 'Informatica PowerCenter',
+        description: 'ETL workflows, CDC pipelines, automation, data integration',
       },
       {
         title: 'Data Modeling',
-        description: 'Star/Snowflake schema, fact & dimension tables, normalization',
+        description: 'Star/Snowflake schema, fact & dimension tables, OLAP models, historical tracking (SCD1/2)',
       },
       {
         title: 'Data Quality & Validation',
-        description: 'Accuracy checks, consistency testing, pipeline monitoring',
-      },
+        description: 'Pipeline validation, null checks, referential integrity, reconciliation, auditing',
+      }
     ],
   },
   {
@@ -55,7 +59,7 @@ const categories = [
     items: [
       {
         title: 'AWS',
-        description: 'S3, Redshift, Lambda, cloud data solutions',
+        description: 'S3, Redshift, Lambda, cloud data solutions, ETL migration',
       },
       {
         title: 'Git / Version Control',
@@ -63,7 +67,11 @@ const categories = [
       },
       {
         title: 'Jira & Agile Tools',
-        description: 'Sprint planning, task tracking, workflow management',
+        description: 'Sprint planning, task tracking, workflow management, cross-team coordination',
+      },
+      {
+        title: 'ServiceNow / Slack',
+        description: 'Incident tracking, communication, collaboration, change requests',
       },
     ],
   },
@@ -72,7 +80,7 @@ const categories = [
     items: [
       {
         title: 'Claims & Utilization Analytics',
-        description: 'Healthcare claims processing, utilization metrics, population health insights',
+        description: 'Claims processing, denials analysis, utilization metrics, population health insights',
       },
       {
         title: 'Member Enrollment & Eligibility',
@@ -83,12 +91,33 @@ const categories = [
         description: 'Provider performance, network adequacy, referral patterns',
       },
       {
-        title: 'Compliance & Regulatory Reporting',
-        description: 'HIPAA standards, audit trails, regulatory alignment',
+        title: 'Regulatory Compliance & Reporting',
+        description: 'HIPAA, ICD-10, CMS reporting, audit readiness, governance alignment',
       },
       {
-        title: 'Member Behavior Analysis',
-        description: 'Cohort analysis, retention tracking, drop-off identification',
+        title: 'Member Behavior & Engagement Analysis',
+        description: 'Cohort analysis, retention tracking, drop-off identification, engagement KPIs',
+      },
+    ],
+  },
+  {
+    name: 'Marketing & Fundraising Analytics',
+    items: [
+      {
+        title: 'Email Campaign Analytics',
+        description: 'Open rates, CTR, CTOR, A/B testing, segmentation, predictive targeting',
+      },
+      {
+        title: 'Donor & Alumni Data Analysis',
+        description: 'Prospect research, engagement tracking, cohort analysis, fundraising insights',
+      },
+      {
+        title: 'KPI Development & Reporting',
+        description: 'Marketing and advancement KPIs, dashboard creation, executive insights',
+      },
+      {
+        title: 'Predictive Modeling & Segmentation',
+        description: 'Click propensity, regression models, classification, cohort targeting',
       },
     ],
   },
@@ -97,23 +126,19 @@ const categories = [
     items: [
       {
         title: 'Exploratory Data Analysis (EDA)',
-        description: 'Trend identification, anomaly detection, pattern discovery',
+        description: 'Trend identification, anomaly detection, root-cause analysis, pattern discovery',
       },
       {
         title: 'A/B Testing & Experimentation',
-        description: 'Hypothesis testing, conversion optimization, statistical validation',
+        description: 'Hypothesis testing, conversion optimization, statistically powered validation',
       },
       {
         title: 'Funnel & Cohort Analysis',
-        description: 'User journey tracking, retention metrics, behavior segmentation',
-      },
-      {
-        title: 'KPI Development & Monitoring',
-        description: 'Metrics definition, performance tracking, executive reporting',
+        description: 'User journey tracking, retention metrics, behavior segmentation, drop-off identification',
       },
       {
         title: 'Process Automation',
-        description: 'Workflow optimization, script development, manual task reduction',
+        description: 'Workflow optimization, ETL automation, script development, manual task reduction',
       },
     ],
   },
@@ -122,11 +147,11 @@ const categories = [
     items: [
       {
         title: 'Data Storytelling',
-        description: 'Translating complex analysis into clear, actionable insights',
+        description: 'Translating complex analysis into actionable, executive-ready insights',
       },
       {
         title: 'Stakeholder Management',
-        description: 'Cross-functional collaboration, executive communication, requirement gathering',
+        description: 'Cross-functional collaboration, requirement gathering, executive communication',
       },
       {
         title: 'Problem Solving & Critical Thinking',
@@ -137,12 +162,12 @@ const categories = [
         description: 'Self-directed project delivery, proactive issue identification, minimal supervision',
       },
       {
-        title: 'Ambiguity Navigation',
-        description: 'Defining scope from vague requirements, prioritizing competing needs',
+        title: 'Project Management',
+        description: 'Timeline management, deliverable tracking, reporting updates, agile delivery',
       },
       {
-        title: 'Project Management',
-        description: 'Timeline management, deliverable tracking, stakeholder updates',
+        title: 'Ambiguity Navigation',
+        description: 'Defining scope from vague requirements, prioritizing competing needs, adaptable approach',
       },
     ],
   },
